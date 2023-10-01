@@ -1,0 +1,112 @@
+<!doctype html>
+<html class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <title>Aryush Gupta</title>
+    
+    <!-- google-fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-950 text-white font-poppins">
+
+    <div class="w-64 h-64 rounded-full bg-gradient-to-br from-slate-400 to-purple-800 fixed -top-32 -right-32 z-[-1] blur-xl blink-circle"></div>
+
+    <div class="w-64 h-64 rounded-full bg-gradient-to-tl from-slate-400 to-purple-800 fixed -bottom-32 -left-32 z-[-1] blur-xl blink-circle2"></div>
+
+    <nav id="nav-bar" class="fixed px-10 h-12 w-full md:h-16 flex items-center justify-between md:justify-around transition delay-200 ease-linear z-20 backdrop-blur-lg rounded-b-2xl">
+        <div id="logo" class="font-sans font-semibold md:text-3xl text-2xl">
+            <p><span class="text-purple-500">Ag</span></p>
+        </div>
+
+        <div class="hidden nav-links md:flex items-center gap-x-10 justify-evenly text-xl font-semibold ml-10 w-1/2 pl-10 h-full">
+            <a href="#" class="h-full flex items-center border-purple-500 hover:border-b-2 px-2">Home</a>
+            <a href="./index.html#about-section" class="h-full flex items-center border-purple-500 hover:border-b-2 px-2">About</a>
+            <a href="./project.html" class="h-full flex items-center border-purple-500 hover:border-b-2 px-2">Projects</a>
+            <a href="./contact-me.html" class="h-full flex items-center border-purple-500 hover:border-b-2 px-2">Contact</a>
+        </div>
+
+        <div id="toggle-menu" class="md:hidden burger-icon w-6 h-7 flex flex-col justify-evenly cursor-pointer">
+            <div id="bar-1" class="w-full h-0.5 bg-white transition duration-500"></div>
+            <div id="bar-2" class="w-full h-0.5 bg-white transition duration-500"></div>
+            <div id="bar-3" class="w-full h-0.5 bg-white transition duration-500"></div>
+        </div>
+    </nav>
+    
+    <section id="nav-bar-extension" class="md:hidden fixed w-full transition duration-500 transform -translate-y-full pt-10 pb-8 bg-slate-900 rounded-b-md backdrop-blur-lg bg-slate-900/75 z-10">
+        <ul class="flex flex-col justify-center items-center font-semibold">
+            <li class="py-5 h-8 w-full text-center"><a href="./index.html">Home</a></li>
+            <li id="nav-bar-extension-about" class="py-5 h-8 w-full text-center"><a href="./index.html#about-section">About</a></li>
+            <li class="py-5 h-8 w-full text-center"><a href="./project.html">Projects</a></li>
+            <li class="py-5 h-8 w-full text-center"><a href="./contact-me.html">Contact</a></li>
+        </ul>
+    </section>
+
+    <section id="home-section" class="h-screen overflow-hidden pt-20">
+        <div class="w-full h-full flex items-center justify-center flex-col md:flex-row">
+            <div class="w-full h-1/2 sm:h-1/3 md:h-full md:w-1/2 text-purple-500 flex justify-center items-center font-semibold text-xl md:text-2xl lg:text-4xl">
+                <div class="w-3/4 pl-8 md:pl-0 space-y-4 md:space-y-8 md:ml-20 text-center md:text-left">
+                    <p class="text-white">Namaste World!</p>
+                    <p class="uppercase tracking-wide text-2xl md:text-3xl lg:text-5xl ">i'm aryush gupta</p>
+                    <div class="h-14 flex items-center justify-center md:justify-start text-white overflow-hidden">
+                        <span id="writer"></span>
+                        <span id="cursor" class="blink"><div class="w-4 border border-purple-500 mx-2 inline-block"></div></span>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full h-1/2 py-5 flex items-start md:items-center justify-center scale-110 lg:scale-90 md:h-full md:w-1/2 md:pl-10">
+                <img class="w-3/4 h-full" src="./assests/svgs/Hand coding-amico.svg" alt="coding-amico-illustration">
+            </div>
+        </div>
+    </section>
+
+    <section id="about-section" class="h-screen flex items-center justify-center">
+        <div class="w-4/5 h-full flex flex-col items-center justify-center overflow-hidden">
+            <div class="h-1/6 w-full flex justify-center items-center md:items-end text-2xl font-semibold underline underline-offset-8 md:text-3xl lg:text-4xl mb-2">
+                <h1>
+                    <span class="text-purple-500">About Me</span>
+                    ?
+                </h1>
+            </div>
+            <div class="py-2">
+                <ul class="flex flex-col justify-center items-start space-y-5 md:space-y-8 lg:space-y-10 text-xl lg:text-2xl md:px-3 lg:px-6 md:py-6 lg:py-10">
+                    <li><p>I am a 3rd year undergraduate at <span class="text-purple-500 font-semibold">Chandigarh University</span>.</p></li>
+
+                    <li><p>I love <span class="text-purple-500 font-semibold">Problem solving</span> and <span class="text-purple-500 font-semibold">Development</span>.</p></li>
+
+                    <li><p>I am <span class="text-purple-500 font-semibold">Tech Savvy</span> and always try to learn about new things and tools related to <span class="text-purple-500 font-semibold">Technology</span>.</p></li>
+
+                    <li><p>Currently I am learning <span class="text-purple-500 font-semibold">Data Structures and Algorithms</span> to improve my logic building and problem solving skills.</p></li>
+
+                    <li><p>My hobbies are <span class="text-purple-500 font-semibold">reading history and geopolitics</span>.</p></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="social-links" class="w-full flex items-center justify-center pt-4 md:pt-0 md:h-36">
+        <div class="h-full text-center">
+            <div class="h-1/2">
+                <h1 class="uppercase text-xl underline underline-offset-8 font-semibold md:text-3xl py-2">find <span class="text-purple-500">me</span> online</h1>
+                <p class="md:text-xl">Let's <span class="text-purple-500">Connect</span>!</p>
+            </div>
+            <div class="flex justify-evenly items-center h-1/2 my-2 gap-x-4">
+                <a href="https://www.linkedin.com/in/aryushgupta/" class="rounded-full cursor-pointer hover:scale-125 transition ease-linear duration-200" target="__blank"><img src="../assests/svgs/linkedin-icon.svg" alt="linkedin-icon" class="h-6 w-6 md:h-8 md:w-8 overflow-hidden rounded-full ring-2 ring-purple-500"></a>
+    
+                <a href="https://twitter.com/gupta_aryush" class="rounded-full cursor-pointer hover:scale-125 transition ease-linear duration-200 border-none" target="__blank"><img src="../assests/svgs/twitterx-icon.svg" alt="twitter-x-logo" class="h-6 w-6 md:h-8 md:w-8 overflow-hidden rounded-full ring-2 ring-purple-500"></a>
+
+                <a href="https://github.com/AryushGupta" class="rounded-full cursor-pointer hover:scale-125 transition ease-linear duration-200 border-none" target="__blank"><img src="../assests/svgs/github-icon.svg" alt="github-icon" class="h-6 w-6 md:h-8 md:w-8 overflow-hidden rounded-full ring-2 ring-purple-500"></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="h-10 mt-10 bg-slate-900/75 text-xs text-center flex items-center justify-center font-semibold md:h-14 md:text-lg">
+        <p>Copyright &copy; 2023 Aryush Gupta</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

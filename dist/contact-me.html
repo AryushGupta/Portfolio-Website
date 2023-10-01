@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <title>Aryush Gupta</title>
+
+    <!-- google-fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-950 text-white font-poppins">
+    <nav id="nav-bar" class="fixed px-10 h-12 w-full md:h-16 flex items-center justify-between md:justify-around transition delay-200 ease-linear z-20 backdrop-blur-lg bg-slate-900/75 rounded-b-2xl">
+        <div id="logo" class="font-sans font-semibold md:text-3xl text-2xl">
+            <p><span class="text-purple-500">Ag</span></p>
+        </div>
+
+        <div class="hidden nav-links md:flex gap-x-10 justify-evenly text-xl font-semibold ml-10 w-1/2 pl-10">
+            <a href="./index.html">Home</a>
+            <a href="./index.html#about-section">About</a>
+            <a href="./project.html">Projects</a>
+            <a href="./contact-me.html">Contact</a>
+        </div>
+
+        <div id="toggle-menu" class="md:hidden burger-icon w-6 h-7 flex flex-col justify-evenly cursor-pointer">
+            <div id="bar-1" class="w-full h-0.5 bg-white transition duration-500"></div>
+            <div id="bar-2" class="w-full h-0.5 bg-white transition duration-500"></div>
+            <div id="bar-3" class="w-full h-0.5 bg-white transition duration-500"></div>
+        </div>
+    </nav>
+    
+    <section id="nav-bar-extension" class="md:hidden fixed w-full transition duration-500 transform -translate-y-full pt-10 pb-8 bg-slate-900 rounded-b-lg backdrop-blur-lg z-10">
+        <ul class="flex flex-col justify-center items-center font-semibold">
+            <li class="py-5 h-8 w-full text-center"><a href="./index.html">Home</a></li>
+            <li class="py-5 h-8 w-full text-center"><a href="./index.html#about-section">About</a></li>
+            <li class="py-5 h-8 w-full text-center"><a href="./project.html">Projects</a></li>
+            <li class="py-5 h-8 w-full text-center"><a href="#">Contact</a></li>
+        </ul>
+    </section>
+
+    <section class="h-screen overflow-hidden">
+        <div class="w-full h-full flex items-center justify-center md:flex-row flex-col pt-20 md:pt-0">
+            <div class="w-full h-1/3 flex md:flex-row justify-center items-center md:items-center md:w-1/2 md:h-full">
+                <div class="text-xl md:text-xl lg:text-2xl space-y-4 md:space-y-8">
+                    <h1 class="text-2xl md:text-3xl lg:text-4xl text-center">Let's Start a <span class="text-purple-500 font-bold">Conversation!</span></h1>
+                    <div>
+                        <p class="flex items-center justify-start text-purple-500">
+                            <img src="../assests/svgs/mail.svg" alt="email-svg" class="w-4 h-4 mx-2 md:w-8 md:h-8">
+                            <a href="mailto:its.aryush.official@gmail.com">its.aryush.official@gmail.com</a>
+                        </p>
+                    </div>
+                    <div>
+                        <p class="flex items-center justify-start text-purple-500">
+                            <img src="../assests/svgs/location.svg" alt="location-pin-svg" class="w-4 h-4 mx-2 md:w-8 md:h-8">
+                            Chandigarh , Bharat
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full h-1/2 flex justify-center md:items-center md:justify-start md:w-1/2 md:h-full -translate-y-5">
+                <img src="../assests/svgs/email.svg" alt="illustration-svg" class="h-full md:h-5/6 md:scale-110">
+            </div>
+        </div>
+    </section>
+
+    <footer class="h-10 mt-10 bg-slate-900/75 text-xs text-center flex items-center justify-center font-semibold md:h-14 md:text-lg">
+        <p>Copyright &copy; 2023 Aryush Gupta</p>
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+</html>

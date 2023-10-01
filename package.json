@@ -1,0 +1,18 @@
+{
+  "name": "aryush-gupta",
+  "version": "1.0.0",
+  "description": "portfolio-website",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "tailwindcss build src/input.css -o dist/output.css"
+  },
+  "keywords": [
+    "portfolio-website",
+    "personal-website"
+  ],
+  "author": "Aryush Gupta",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}

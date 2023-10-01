@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes blink {
+    0%{
+        opacity: 1;
+    } 
+    50%{
+        opacity:0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.blink{
+    animation:blink 1.5s infinite;
+}
+
+@keyframes circle {
+    0%{
+        opacity: 0.75;
+        height: 16rem;
+        width: 16rem;
+    } 
+    50%{
+        opacity: 1;
+        width: 16.5rem;
+        height: 16.5rem;
+    }
+    100%{
+        opacity: .75;
+        width: 16rem;
+        height: 16rem;
+    }
+}
+
+.blink-circle{
+    animation: circle 7.5s infinite;
+}
+
+@keyframes circle2 {
+    0%{
+        opacity: 1;
+        width: 16.5rem;
+        height: 16.5rem;
+    }
+    50%{
+        opacity: 0.75;
+        width: 16rem;
+        height: 16rem;
+    }
+    100%{
+        opacity: 1;
+        width: 16.5rem;
+        height: 16.5rem;
+    }
+}
+
+.blink-circle2 {
+    animation: circle2 7.5s infinite;
+}
+
+.change #bar-1 {
+    transform: translate(0, 7.5px) rotate(-45deg);
+}
+
+.change #bar-2 {
+    opacity: 0;
+}
+
+.change #bar-3 {
+    transform: translate(0, -7.5px) rotate(45deg);
+}
+
+#nav-bar-extension {
+    transition: transform 0.5s ease-in-out;
+}
+
+#nav-bar-extension.make-visible {
+    transform: translateY(0);
+}
+
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+
+::webkit-scrollbar-track {
+    background-color: #7e22ce;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #7e22ce;
+    border-radius: 5px;
+}
